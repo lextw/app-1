@@ -6,7 +6,7 @@ namespace app_1
     {
         static void Main(string[] args)
         {
-            int picture = 52;
+            int pictureCount = 52;
             int pictureInRow = 3;
             int countFullRow;
             int balance;
