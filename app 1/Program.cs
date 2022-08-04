@@ -6,13 +6,17 @@ namespace app_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Как вас зовут");
-            string name = Console.ReadLine();
-            Console.WriteLine("Какой ваш знак зодиака");
-            string zodiacSign = Console.ReadLine();
-            string fullText = "Вас зовут " + name + ", вам 21 год, вы " + zodiacSign + " и работаете на заводе.";
+            string name = "Kondracheno";
+            string singleName = "Alex";
 
-            Console.WriteLine(fullText);
+            Console.WriteLine(name);
+            Console.WriteLine(singleName);
+
+            name = "Alex";
+            singleName = "Kondracheno";
+
+            Console.WriteLine(name);
+            Console.WriteLine(singleName);
         }
     }
 }
