@@ -7,24 +7,19 @@ namespace app_1
         static void Main(string[] args)
         {
             Console.WriteLine("Введите колличество золота: ");
+            int goldsCount = Convert.ToInt32(Console.ReadLine());
 
-            int goldCount = Convert.ToInt32(Console.ReadLine());
             int priceСrystal = 3;
-            int cristalBy;
-            int remainingCristal;
 
-            if (goldCount > priceСrystal)
-            {
-                cristalBy = goldCount / priceСrystal;
-                remainingCristal = goldCount % priceСrystal;
+            Console.WriteLine("Стоимость одного кристала = " + priceСrystal + ". Сколько кристалов хотите купить?");
+            int crystalsCount = Convert.ToInt32(Console.ReadLine());
 
-                Console.WriteLine("Колличество кристалов: " + cristalBy);
-                Console.WriteLine("Остаток золота: " + remainingCristal);
-            } 
-            else
-            {
-                Console.WriteLine("Золота недостаточно для покупки кристалов");
-            }
+            int remainingGolds;
+            remainingGolds = goldsCount - (crystalsCount * priceСrystal);
+
+            Console.WriteLine("Колличество кристалов: " + crystalsCount);
+            Console.WriteLine("Остаток золота: " + remainingGolds);
+            
         }
     }
 }
