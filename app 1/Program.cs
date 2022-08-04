@@ -11,9 +11,9 @@ namespace app_1
             bool isWork = true;
             double numberPi = 3.14;
             float distance = 3.14f;
-            decimal num = 11.04m;
+            decimal damage = 11.04m;
             char firstLetter = 'a';
-            var distanceToFinish = 1.4;
+            ushort distanceToFinish = 20;
             byte members = 2;
             sbyte numberOfPlayers = 4;
 
