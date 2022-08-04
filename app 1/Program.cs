@@ -18,8 +18,7 @@ namespace app_1
             remainingGolds = goldsCount - (crystalsCount * priceСrystal);
 
             Console.WriteLine("Колличество кристалов: " + crystalsCount);
-            Console.WriteLine("Остаток золота: " + remainingGolds);
-            
+            Console.WriteLine("Остаток золота: " + remainingGolds);          
         }
     }
 }
