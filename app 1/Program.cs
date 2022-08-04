@@ -6,19 +6,16 @@ namespace app_1
     {
         static void Main(string[] args)
         {
-            string name = "Kondracheno";
-            string secondName = "Alex";
+            int picture = 52;
+            int pictureInRow = 3;
+            int countFullRow;
+            int balance;
 
-            Console.WriteLine(name);
-            Console.WriteLine(secondName);
+            countFullRow = picture / pictureInRow;
+            balance = picture % pictureInRow;
 
-            string intermediateVariable = name;
-
-            name = secondName;
-            secondName = intermediateVariable;
-
-            Console.WriteLine(name);
-            Console.WriteLine(secondName);
+            Console.WriteLine("Полных рядов: " + countFullRow);
+            Console.WriteLine("Остаток: " + balance);
         }
     }
 }
