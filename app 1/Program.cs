@@ -7,16 +7,18 @@ namespace app_1
         static void Main(string[] args)
         {
             string name = "Kondracheno";
-            string singleName = "Alex";
+            string secondName = "Alex";
 
             Console.WriteLine(name);
-            Console.WriteLine(singleName);
+            Console.WriteLine(secondName);
 
-            name = "Alex";
-            singleName = "Kondracheno";
+            string intermediateVariable = name;
+
+            name = secondName;
+            secondName = intermediateVariable;
 
             Console.WriteLine(name);
-            Console.WriteLine(singleName);
+            Console.WriteLine(secondName);
         }
     }
 }
