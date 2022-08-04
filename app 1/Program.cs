@@ -9,13 +9,13 @@ namespace app_1
             int pictureCount = 52;
             int pictureInRow = 3;
             int countFullRow;
-            int balance;
+            int remainingPictures;
 
-            countFullRow = picture / pictureInRow;
-            balance = picture % pictureInRow;
+            countFullRow = pictureCount / pictureInRow;
+            remainingPictures = pictureCount % pictureInRow;
 
             Console.WriteLine("Полных рядов: " + countFullRow);
-            Console.WriteLine("Остаток: " + balance);
+            Console.WriteLine("Остаток: " + remainingPictures);
         }
     }
 }
