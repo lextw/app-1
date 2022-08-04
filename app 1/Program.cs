@@ -6,16 +6,25 @@ namespace app_1
     {
         static void Main(string[] args)
         {
-            int pictureCount = 52;
-            int pictureInRow = 3;
-            int countFullRow;
-            int remainingPictures;
+            Console.WriteLine("Введите колличество золота: ");
 
-            countFullRow = pictureCount / pictureInRow;
-            remainingPictures = pictureCount % pictureInRow;
+            int goldCount = Convert.ToInt32(Console.ReadLine());
+            int priceСrystal = 3;
+            int cristalBy;
+            int remainingCristal;
 
-            Console.WriteLine("Полных рядов: " + countFullRow);
-            Console.WriteLine("Остаток: " + remainingPictures);
+            if (goldCount > priceСrystal)
+            {
+                cristalBy = goldCount / priceСrystal;
+                remainingCristal = goldCount % priceСrystal;
+
+                Console.WriteLine("Колличество кристалов: " + cristalBy);
+                Console.WriteLine("Остаток золота: " + remainingCristal);
+            } 
+            else
+            {
+                Console.WriteLine("Золота недостаточно для покупки кристалов");
+            }
         }
     }
 }
