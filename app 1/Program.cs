@@ -6,16 +6,14 @@ namespace app_1
     {
         static void Main(string[] args)
         {
-            string firtsName = "Alex";
-            int age = 28;
-            bool isWork = true;
-            double numberPi = 3.14;
-            float distance = 3.14f;
-            decimal damage = 11.04m;
-            char firstLetter = 'a';
-            ushort distanceToFinish = 20;
-            byte members = 2;
-            sbyte numberOfPlayers = 4;
+
+            Console.WriteLine("Как вас зовут");
+            string name = Console.ReadLine();
+            Console.WriteLine("Какой ваш знак зодиака");
+            string zodiacSign = Console.ReadLine();
+            string str = "Вас зовут " + name + ", вам 21 год, вы " + zodiacSign + " и работаете на заводе.";
+
+            Console.WriteLine(str);
 
         }
     }
